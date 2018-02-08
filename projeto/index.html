@@ -9,7 +9,8 @@
     <title>Chatschool</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Users/Felipe Guerra/desenv/Projeto_HTML_CSS/projeto/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Users/Felipe Guerra/desenv/Projeto_HTML_CSS/projeto/css/styles.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,82 +20,249 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container-fluid">
-    <div class="row">
-        <section id="sidenav" class="col-md-2">
-            <div class="navbar navbar-inverse navbar-static-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a href="" class="navbar-brand">Chatschool</a>
-                    </div>
-                    <ul id="me" class="nav navbar-nav">
-                        <li><a href="">amathias</a></li>
-                    </ul>
-                </div>
+    <div class="container-fluid box-100-height">
+      <div class="row box-100-height">
+      <section id="sidenav" class="col-md-2 box-100-height">
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a href="" class="navbar-brand">
+                <img src="/Users/Felipe Guerra/desenv/Projeto_HTML_CSS/images/logo.png" alt="">
+              </a>
             </div>
+            <ul id="me" class="nav navbar-nav">
+               <li class="online"><a href="">amathias</a></li>
+             </ul> 
+          </div>
+        </div>
 
-            <ul class="nav nav-pills nav-stacked">
-                <li>
-                    <a href="">Todos os tópicos</a>
-                </li>
-            </ul>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="no-status">
+            <a href=""><span class="glyphicon glyphicon-comment"></span> Todos os tópicos</a>
+          </li>
+        </ul>
 
-            <ul class="nav nav-pills nav-stacked">
-                <li>
-                    Favoritos
-                </li>
-                <li>
-                    <a href="">Candido</a>
-                </li>
-                <li>
-                    <a href="">Erik</a>
-                </li>
-                <li>
-                    <a href="">Leonan.luppi</a>
-                </li>
-            </ul>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="nav-header">
+            <span class="glyphicon glyphicon-star"></span>Favoritos
+          </li>
+          <li class="online">
+            <a href="">Candido</a>
+            <a href="" class="action">x</a>
+          </li>
+          <li>
+            <a href="">Erik</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+          <li>
+            <a href="">Leonan.luppi</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+        </ul>
 
-            <ul class="nav nav-pills nav-stacked">
-                <li>
-                    Canais(3)
-                </li>
-                <li>
-                    <a href="">Comunicação-interna</a>
-                </li>
-                <li>
-                    <a href="">estratégia</a>
-                </li>
-            </ul>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="nav-header">
+            Canais(3)
+          </li>
+          <li class="online active">
+            <a href=""><span class="glyphicon glyphicon-lock"></span> Comunicação-interna</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+          <li>
+            <a href=""><span class="glyphicon glyphicon-lock"></span> estratégia</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+        </ul>
 
-            <ul class="nav nav-pills nav-stacked">
-                <li>
-                    Mensagens diretas
-                </li>
-                <li>
-                    <a href="">argentinaluiz</a>
-                </li>
-                <li>
-                    <a href="">manuellagreco</a>
-                </li>
-                <li>
-                    <a href="">rafael</a>
-                </li>
-                <li>
-                    <a href="">rodrigo</a>
-                </li>
-                <li>
-                    <a href="">nilton_moraes</a>
-                </li>
-                <li>
-                    <a href="">Leonan.luppi</a>
-                </li>
-                <li>
-                    <a href="">Wesley Willians</a>
-                </li>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="nav-header">
+            Mensagens diretas
+          </li>
+          <li>
+            <a href="">argentinaluiz</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+          <li>
+            <a href="">manuellagreco</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+          <li class="online">
+            <a href="">rafael</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+          <li>
+            <a href="">rodrigo</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+          <li>
+            <a href="">nilton_morais</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+          <li>
+            <a href="">Leonan.luppi</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+          <li>
+            <a href="">wesley Willians</a>
+            <a href="" class="action">x</a>
+          </li>
+          </li>
+        </ul>
+      </section>
+
+      <section id="content" class="col-md-10 box-100-height">
+        <div class="navbar navbar-default navbar-static-top">
+          <div class="container-fluid">
+            <ul id="chat-title" class="nav navbar-nav">
+              <li>
+                <span>
+                  <a href="" class="title">@candido</a>
+                  <a href="" class="favorite"><span class="glyphicon glyphicon-star"></span></a> |
+                  <a href="" class="status">ativo</a>
+                </span>
+              </li>
             </ul>
-        </section>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href=""><span class="glyphicon glyphicon-earphone"></span></a></li>
+              <li><a href=""><span class="glyphicon glyphicon-cog"></span></a></li>
+              <li>
+                <form action="" class="navbar-form navbar-left">
+                  <div class="input-group">
+                    <span class="input-group-addon">*</span>
+                    <input type="text" class="form-control" placeholder="Buscar...">
+                  </div>
+                </form>
+              </li>
+              <li><a href="">@</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-star-empety"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 datetime-separator">
+            <h5>05/02/2018</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1">
+            <div class="img-box-round">
+              <img src="C:\Users\Felipe Guerra\desenv\Projeto_HTML_CSS\images\team\team1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-11">
+            <div class="row">
+              <h5>amathias <small>5:35 PM</small></h5>
+            </div>
+            <div class="row">
+              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+              <p>Neque porro quisquam est</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1">
+            <div class="img-box-round">
+              <img src="C:\Users\Felipe Guerra\desenv\Projeto_HTML_CSS\images\team\team2.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-11">
+            <div class="row">
+              <h5>candido <small>5:35 PM</small></h5>
+            </div>
+            <div class="row">
+              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+              <p>Neque porro quisquam est</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 datetime-separator">
+            <h5>Hoje</h5>
+          </div>
+        </div>
+             <div class="row">
+          <div class="col-md-1">
+            <div class="img-box-round">
+              <img src="C:\Users\Felipe Guerra\desenv\Projeto_HTML_CSS\images\team\team1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-11">
+            <div class="row">
+              <h5>amathias <small>5:35 PM</small></h5>
+            </div>
+            <div class="row">
+              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+              <p>Neque porro quisquam est</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1">
+            <div class="img-box-round">
+              <img src="C:\Users\Felipe Guerra\desenv\Projeto_HTML_CSS\images\team\team2.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-11">
+            <div class="row">
+              <h5>candido <small>5:35 PM</small></h5>
+            </div>
+            <div class="row">
+              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+              <p>Neque porro quisquam est</p>
+            </div>
+          </div>
+        </div>
+             <div class="row">
+          <div class="col-md-1">
+            <div class="img-box-round">
+              <img src="C:\Users\Felipe Guerra\desenv\Projeto_HTML_CSS\images\team\team1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-11">
+            <div class="row">
+              <h5>amathias <small>5:35 PM</small></h5>
+            </div>
+            <div class="row">
+              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+              <p>Neque porro quisquam est</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1">
+            <div class="img-box-round">
+              <img src="C:\Users\Felipe Guerra\desenv\Projeto_HTML_CSS\images\team\team2.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-md-11">
+            <div class="row">
+              <h5>candido <small>5:35 PM</small></h5>
+            </div>
+            <div class="row">
+              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+              <p>Neque porro quisquam est</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      </div>
     </div>
-</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
